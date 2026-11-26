@@ -1,36 +1,33 @@
-# osint-docs
+# OSINT — Repo unificado
 
-Repositorio de **documentación OSINT**: fundamentos, catálogo de herramientas, técnicas,
-OPSEC, verticales especializadas, recursos y marco legal. Complementa a `osint-vm`
-(configuración/scripts) y a la bóveda de Obsidian `IA Brain`.
+Todo el conocimiento OSINT en un solo lugar: documentación, catálogo de herramientas,
+metodologías, OPSEC, verticales especializadas, recursos y la configuración de la VM dedicada.
 
 ## Estructura
 
 ```
-osint-docs/
-├── README.md
-├── .gitignore
-├── LICENSE
-├── 01-fundamentos/     # metodologías, ciclo OSINT, frameworks
-├── 02-herramientas/    # web, apps descargables, CLI, Kali, BlackArch
-├── 03-tecnicas/        # verificación, falsos positivos, GEOINT, deepfakes
-├── 04-opsec/           # anonimato, dark web, secretos, aislamiento
-├── 05-especializado/   # financiero, telefonía, email, aéreo/marítimo, redes
-├── 06-recursos/        # GitHub, directorios, fuentes, MCP servers
-└── 07-legal/           # política de uso, RGPD, cadena de custodia
+osint/
+├── 01-fundamentos/   # ciclo OSINT, Berkeley Protocol, ACH, cadena de custodia
+├── 02-herramientas/  # ranking general, apps descargables, CLI
+├── 03-tecnicas/      # verificación, falsos positivos, deepfakes, IA/LLM
+├── 04-opsec/         # anonimato, extensiones, dark web, cripto, secretos
+├── 05-especializado/ # GEOINT, financiero, telefonía, email, aéreo/marítimo, redes, CTI
+├── 06-recursos/      # awesome lists, MCP servers, agentes, LLMs locales
+├── 07-legal/         # política de uso, RGPD, cadena de custodia
+└── vm/               # configuración y scripts de la VM OSINT
+    ├── 00-docs/      # arquitectura y decisión de distro
+    ├── 01-scripts/   # instalación, hardening, backup
+    ├── 02-configs/   # dotfiles y configuraciones
+    ├── 03-templates/ # plantillas Obsidian
+    ├── 04-inventario/# catálogo de herramientas
+    └── 05-legal/     # política de uso
 ```
 
-## Contenido
-- Catálogo de herramientas (web, GUI, CLI, Kali, BlackArch) con utilidad y licencia.
-- Técnicas de verificación y detección de falsos positivos.
-- OPSEC y anonimato para investigadores.
-- OSINT especializado por vertical.
-- Recursos y directorios (awesome lists, MCP servers).
-- Marco legal y ético.
+## Base recomendada
+Trace Labs OSINT VM 2026.10 (Debian 13) + BlackArch aislada + Obsidian como cuaderno enlazado.
 
-## Qué NO se sube
-Datos de investigación, credenciales, dumps, API keys, capturas con PII. Ver `.gitignore`.
+## Seguridad
+**No se suben** datos de investigación, credenciales, dumps, API keys ni PII (ver `.gitignore`).
 
-## Relación con otros repos
-- `osint-vm` — configuración y scripts de la VM.
-- Bóveda Obsidian `IA Brain` — cuaderno de trabajo enlazado.
+## Relación con Obsidian
+El cuaderno de trabajo vive en la bóveda `IA Brain` (notas `OSINT-*` enlazadas desde el Mapa Mental).
