@@ -1,0 +1,41 @@
+# Secretos y credenciales
+*.key
+*.pem
+*.env
+.env
+secrets/
+credentials/
+*.kdbx
+
+# Datos de investigación (NO subir)
+investigacion/
+casos/
+evidencia/
+capturas/
+dumps/
+leaks/
+*.har
+*.pcap
+
+# PII
+*.csv
+*.xlsx
+personas/
+perfiles/
+
+# Sistema / editores
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# Grandes / binarios
+*.iso
+*.ova
+*.zip
+*.tar.gz
+
+# Obsidian workspace local
+.obsidian/workspace.json
+.trash/
